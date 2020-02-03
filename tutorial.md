@@ -8,12 +8,12 @@ dotnet new webapp <name-of-the-app>
 
 2. Inside the Pages directory
 
--   .cshtml file that contains HTML markup with C# code using Razor syntax.
--   .cshtml.cs file that contains C# code that handles page events.
+- .cshtml file that contains HTML markup with C# code using Razor syntax.
+- .cshtml.cs file that contains C# code that handles page events.
 
 3. Add a data model
 
--   Under /Models, create a Model class, which will represent the database table structure
+- Under /Models, create a Model class, which will represent the database table structure
 
 ```csharp
 using System;
@@ -41,7 +41,7 @@ namespace RazorPagesMovie.Models
 }
 ```
 
--   Create a database context class, which create the link between the database and the web app
+- Create a database context class, which create the link between the database and the web app
 
 ```csharp
 using Microsoft.EntityFrameworkCore;
@@ -61,7 +61,7 @@ namespace RazorPagesMovie.Data
 }
 ```
 
--   Add the database context class to the ConfigurationService method
+- Add the database context class to the ConfigurationService method
 
 ```csharp
 if (Environment.IsDevelopment())
@@ -78,14 +78,16 @@ else
 
 5. Database Migration
 
--   Create Migration File
+- Create Migration File
 
 ```powershell
 dotnet ef migration add <name-of-the-migration>
 ```
 
--   Migration
+- Migration
 
 ```powershell
 dotenet ef database update
 ```
+
+6. EF (Entity Framework), Razor Page, Blazor Page (Components), MVC

@@ -12,6 +12,7 @@ namespace RazorPagesMovie.Models
             Meal
         }
         public int recordID { get; set; }
+        [Display(Name = "Record")]
         public string recordName { get; set; }
         public string description { get; set; }
         [EnumDataType(typeof(Category))]
